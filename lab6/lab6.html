@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6</title>
+    <style>
+        .f {
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        .fld {
+            margin: 0 auto;
+            width: 25%;
+        }
+
+        .slt1 {
+            margin: 0 auto;
+        }
+
+        .ex {
+            margin-top: 30px;
+        }
+
+        .reg {
+            width: 25%;
+            margin: 0 auto;
+        }
+
+        .d1 {
+            
+            margin-top: 20px;
+        }
+        .d2{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Виды форм-->
+    <form action="" method="post" align="center">
+        <fieldset class="fld">
+            <legend align="center">Input</legend>
+            <p><b>Введите что-нибудь</b></p>
+            <input type="text" name="name" id="name" placeholder="Что-то">
+            <input type="submit" name="button" id="button" value="Войти :)">
+        </fieldset>
+    </form>
+
+    <form class="f" action="" method="post" align="center">
+        <fieldset class="fld">
+            <legend align="center">Textarea</legend>
+            <textarea cols="20" name="text" rows="3" placeholder="Тоже что-то"></textarea>
+            <input type="submit" name="button" id="button" value="Отправить">
+        </fieldset>
+    </form>
+
+    <form class="f" action="" multiple="10" method="post">
+        <fieldset class="fld">
+            <legend align="center">Select</legend>
+            <label for="slt">Select</label>
+            <select class="slt1" type="select" name="" size="4" id="slt">
+                <option value="">123</option>
+                <option selected value="">345</option>
+                <option value="">1</option>
+                <option value="">2</option>
+
+            </select>
+        </fieldset>
+    </form>
+
+    <!--Пример-->
+    <form class="ex" action="action.php" align="left">
+        <fieldset class="reg">
+            <legend align="center">Регистрация</legend>
+            <div class="d2">
+                <label for="sex"><b>Обращение</b></label>
+                <input type="radio" name="sex" id="male"> Г-н
+                <input type="radio" name="sex" id="female"> Г-ка
+            </div>
+            <div сlass="d1">
+                <label for="name">Имя</label>
+                <input type="text" name="" value="" id="name" placeholder="Имя">
+            </div>
+            <div class="d1">
+                <label for="name">Фамилия</label>
+                <input type="text" name="" value="" id="name" placeholder="Фамилия">
+            </div>
+            <div class="d1">
+                <label for="name">Email</label>
+                <input type="text" name="" value="" id="name" placeholder="example@gmail.com">
+            </div>
+            <div class="d1">
+                <label for="name">Телефон</label>
+                <input type="text" name="" value="" id="name" placeholder="Телефон">
+            </div>
+            <div class="d1">
+                <label for="name">Пароль</label>
+                <input type="password" name="" value="" id="name" placeholder="Пароль">
+            </div>
+            <div class="d1">
+                <label for="name">Подтверите пароль</label>
+                <input type="password" name="" value="" id="name" placeholder="">
+            </div>
+            <div class="d1">
+                <label for="slt">Выберите страну</label>
+                <select class="slt1" type="select" name="" size="1" id="slt">
+                    <option value="">Польша</option>
+                    <option selected value="">Беларусь</option>
+                    <option value="">Украина</option>
+                </select>
+            </div>
+            <div class="d1">
+                <input type="checkbox" value=""> Я согласен с <a href="oh.jpg">условиями пользования</a>
+            </div>
+            <div class="d1">
+                <input type="submit" name="button" id="button" value="Зарегистрироваться">
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
