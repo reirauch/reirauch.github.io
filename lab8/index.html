@@ -6,33 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lab8</title>
     <style>
-        body{
-            background: linear-gradient(180deg,#F38181, white);
+        body {
+            background: linear-gradient(180deg, #F38181, white);
             height: auto;
-            
+
         }
+
         .ttl {
             display: block;
             margin: 0 auto;
             margin-bottom: 20px;
-            padding:7px ;
+            padding: 7px;
             background-color: #EAFFD0;
             width: 450px;
+            border-radius: 20px;
+            transition: 0.1s linear;
+            box-shadow: 1px 1px 10px black;
+            border-radius: 15px;
         }
-        .on{
+
+        .ttl:hover {
+            transform: scale(1.04);
+        }
+
+        .on {
             padding: 5px;
             background-color: #EAFFD0;
             display: block;
             margin: 0 auto;
-            border:  black solid 2px;
+            border: black solid 2px;
             transition: 0.1s linear;
             box-shadow: 1px 1px 30px black;
             border-radius: 15px;
         }
-        .on:hover{
-            transform: scale(1.04) ;
+
+        .on:hover {
+            transform: scale(1.04);
         }
-        .gal{
+
+        .gal {
             padding: 10px;
             background-color: rgb(231, 183, 253);
             display: inline-block;
@@ -44,28 +56,60 @@
             box-shadow: 1px 1px 30px black;
             border-radius: 15px;
         }
-        .gal:hover{
-            transform: scale(1.04) ;
-            
+
+        .gal:hover {
+            transform: scale(1.04);
+            box-shadow: 2px 2px 40px black;
         }
-        .lbl{
+
+        .lbl {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-weight: bold;
             margin: 0;
             text-align: center;
             font-size: 20px;
         }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #000000;
+            /* Цвет посещённой ссылки */
+            text-decoration: none;
+        }
+
+        a:hover {
+            transition: 0.1s linear;
+            color: #fc1a1a;
+            /* Цвет ссылки при наведении на нее курсора мыши */
+            text-decoration: none;
+            /* Добавляем подчеркивание */
+        }
     </style>
 </head>
 
 <body>
-    <span class="ttl" style="font-weight:bold;font-size:34px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" align="center">Обещанный Неверленд</span>
+    <span class="ttl"
+        style="font-weight:bold;font-size:34px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"
+        align="center"> <a href="https://shikimori.one/animes/z37779-yakusoku-no-neverland">Обещанный
+            Неверленд</a></span>
     <div><img class="on" width="300px" src="on.jpg" alt=""></div>
-    
-    <div class="gal"><img src="em.jpg" alt=""><p class="lbl">Эмма</p></div>
-    <div class="gal"><img src="mor.jpg" alt=""><p class="lbl">Норман</p></div>
-    <div class="gal"><img src="rei.jpg" alt=""><p class="lbl">Рей</p></div>
-    <div class="gal"><img src="is.jpg" alt=""><p class="lbl">Изабелла</p></div>
+
+    <div class="gal"><img src="em.jpg" alt="">
+        <p class="lbl">Эмма</p>
+    </div>
+    <div class="gal"><img src="mor.jpg" alt="">
+        <p class="lbl">Норман</p>
+    </div>
+    <div class="gal"><img src="rei.jpg" alt="">
+        <p class="lbl">Рей</p>
+    </div>
+    <div class="gal"><img src="is.jpg" alt="">
+        <p class="lbl">Изабелла</p>
+    </div>
 </body>
 
 </html>
