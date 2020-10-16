@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab10</title>
+    <link rel="shortcut icon" href="sc.png" type="image/png">
+    <style>
+        body {
+            background: linear-gradient(180deg, rgb(106, 208, 255), rgb(119, 253, 191))
+        }
+        table{
+            border: 2px solid rgb(109, 109, 109);
+        }
+        tr,td{
+            border: 2px solid rgb(150, 150, 150);
+        }
+
+        .td1 {
+            font-size: 130%;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a:visited{
+            color: black;
+            text-decoration: none;
+        }
+
+        p {
+            transition: 0.5s;
+            cursor: pointer;
+            
+        }
+
+        p:hover {
+            transform: scale(1.05);
+            text-shadow: 2px 2px 10px rgb(94, 94, 94);
+            cursor: pointer;
+        }
+
+        .img1 {
+            margin: 20px;
+            border-radius: 10px;
+            transition: 0.1s;
+            box-shadow: 0px 0px 10px black;
+        }
+        .img2{
+            margin: 20px;
+            width: 500px;
+            transition: 0.1s;
+            box-shadow: 0px 0px 10px black;
+            border-radius: 10px;
+        }
+        .img2:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px black;
+        }
+        .img3{
+            margin: 20px;
+            width: 350px;
+            border-radius: 10px;
+            transition: 0.1s;
+            box-shadow: 0px 0px 10px black;
+            background: linear-gradient(180deg, pink, white);
+        }
+        .img3:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px black;
+        }
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px black;
+        }
+
+        .table1 {
+            background: linear-gradient(180deg, rgb(146, 233, 255), white);
+        }
+
+        .title1 {
+            background: linear-gradient(180deg, rgb(252, 173, 255), white);
+        }
+        span{
+            display: block;
+                
+        }
+    </style>
+</head>
+
+<body>
+    <table class="table1" cellspacing="4px"  width="50%" align="center">
+        <tr class="title1">
+            <td align="center"><img class="img1" src="sa.jpg" alt="" width="50%"></td>
+            <td width="50%"><a href="glitch.html"><p class="td1">Spirited away</p></a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><img class="img1" src="hm.jpg" alt="" width="50%"></td>
+            <td width="50%">
+                <p class="td1">Hayao Miyazaki</p>
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><img class="img1" src="co.jpeg" alt="" width="50%"></td>
+            <td width="50%">
+                <p class="td1">Chihiro Ogino</p>
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><img class="img1" src="haku.jpg" alt="" width="50%"></td>
+            <td width="50%">
+                <p class="td1">Haku</p>
+            </td>
+        </tr>
+    </table>
+    <span>
+        <img class="img2" src="beg.gif" alt="" >
+        <img class="img3" src="cel.png" alt="" >
+        <object class="img3" type="image/svg+xml" data="tree.svg" width="200" height="200">
+            <img src="tree.png" width="200" height="200" alt="image format png" />
+          </object>
+    </span>
+</body>
+
+</html>
