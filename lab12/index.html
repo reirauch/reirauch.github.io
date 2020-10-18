@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab12</title>
+    <style>
+        html {
+            height: auto;
+        }
+
+        body {
+            background-color: rgb(152, 217, 255);
+
+        }
+
+        img {
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+            transition: .3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        .box {
+            position: absolute;
+            left: 8%;
+            top: 15%
+        }
+
+        .cap {
+            position: fixed;
+            width: 100%;
+            text-align: center;
+            top: 0%;
+            left: 0;
+            margin-top: -35px;
+            z-index: 999;
+        }
+
+        .ttl {
+            color: rgb(38, 41, 53);
+            font-size: 250%;
+            font-family: monospace;
+            padding: 5px;
+            background-color: rgba(255, 255, 255, 0.8);
+
+            box-shadow: 0px 0px 6px black;
+            transition: .2s;
+            cursor: default;
+        }
+
+        .ttl:hover {
+            color: rgb(245, 102, 102);
+        }
+
+        .descr {
+            position: absolute;
+            left: 42%;
+            width: 600px;
+            text-align: justify;
+            top: 12%;
+            box-shadow: 0px 0px 6px black;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        h3 {
+            text-align: center;
+            font-family: monospace;
+            font-size: 23px;
+        }
+
+        .syn {
+            font-family: monospace;
+            font-size: 17px;
+            padding: 0px 15px 5px 15px;
+        }
+        
+
+        .char {
+            position: relative;
+            top: 750px;
+            margin-bottom: 20px;
+            width: 100%;
+            height: 500px;
+            box-shadow: 0px 0px 6px black;
+            background-color: rgba(255, 255, 255, 0.6);
+            z-index: 2;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .ks {
+            position: absolute;
+            left: 2%;
+            padding: 15px 10px 10px 10px;
+            background-color: rgba(126, 255, 133, 0.8);
+            top: 8%;
+            border-radius: 10px;
+
+        }
+
+        .aq {
+            position: absolute;
+            top: 8%;
+            left: 28%;
+            padding: 15px 10px 10px 10px;
+            background-color: rgba(116, 204, 255, 0.8);
+            border-radius: 10px;
+        }
+
+        .mag {
+            position: absolute;
+            top: 8%;
+            left: 55%;
+            padding: 15px 10px 10px 10px;
+            background-color: rgb(255, 108, 108);
+            border-radius: 10px;
+        }
+
+        .ld {
+            position: absolute;
+            top: 8%;
+            left: 81%;
+            padding: 15px 10px 10px 10px;
+            background-color: rgb(255, 191, 255);
+            border-radius: 10px;
+        }
+        .p1{
+            font-family: monospace;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cap">
+        <p class="ttl">Этот замечательный мир!</p>
+    </div>
+    <div class="box"><img src="main.jpg_large" alt="" width="27%"></div>
+    <div class="descr">
+        <h3>Описание</h3>
+        <p class="syn">Так уж получилось, что жизнь <font size="+2"><i style="color: rgb(184, 0, 0);">Казумы Сато</i>
+            </font>, хикикомори, увлечённого видеоиграми, оборвалась в результате дорожно-транспортного происшествия.
+            Такая вот суровая плата за хороший поступок, за спасение человека. Однако, очнувшись, парень вдруг понял,
+            что жив-здоров, а перед собой увидел симпатичную девушку, <font size="+2"><i
+                    style="color: rgb(4, 196, 255);">Акву</i></font>, представившуюся богиней. Вопреки ожиданиям, богиня
+            не произнесла, мол: <i>«Ну-ка, парень, сгруппируйся, сейчас тебя на небеса отправим!»</i> Напротив, девушка
+            едва ли не сразу стала объяснять, что ищет героя, способного победить какого-то-там злобного Владыку демонов
+            и тем самым спасти какой-то-там другой мир. И уж больно этот «какой-то-там» мир был похож на видеоигру. Что,
+            безусловно, подкупало.
+            <i>«Значит, гляди,</i> — продолжала Аква. — <i>Если согласишься, можешь взять с собой одну любую вещь или
+                способность. Хочешь, меч из хвоста неведомого чудовища, а хочешь — силу горного великана. Ну так что
+                выбираешь?»</i> Долго Казума думать не стал. <i>«Выбираю тебя!»</i> — сообразил он, чем тут же выбил
+            навязчивую богиню из колеи. Так начинаются приключения странного хикикомори и незадачливой богини по чужому
+            и неприветливому миру, где Казума попытается начать новую мирную жизнь, на время позабыв, что зло здесь
+            никогда не дремлет.</p>
+    </div>
+    <div class="char">
+        <div class="ks"><img src="ks.jpg" width="100%" alt="">
+            <p class="p1">Казума Сато</p>
+        </div>
+        <div class="aq"><img src="aq.jpg" alt="">
+            <p class="p1">Аква</p>
+        </div>
+        <div class="mag"><img src="mag.jpg" alt="">
+            <p class="p1">Мэгумин</p>
+        </div>
+        <div class="ld"><img src="ld.jpg" alt="">
+            <p class="p1">Лалатина Дастинесс Форд</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
