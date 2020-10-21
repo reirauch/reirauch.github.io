@@ -105,8 +105,7 @@
         .container-photos {
             width: 100%;
             display: flex;
-            margin-top: 50px;
-            box-shadow: 0 0 10px;
+            margin-top: 0px;
             padding: 30px;
             justify-content: space-around;
             align-items: center;
@@ -116,7 +115,7 @@
             background-color: thistle;
             border-radius: 20px;
             transition: .2s;
-            box-shadow: 0 0 10px black;
+            
         }
         .wrapper:hover{
             transform: scale(1.06);
@@ -129,6 +128,23 @@
         }
         h3{
             font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .caption{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            font-family: monospace;
+        }
+        h1{
+            padding: 10px;
+            border: 2px solid;
+            transition: .2s;
+            cursor: default;
+        }
+        h1:hover{
+            transform: scale(1.1);
+            cursor: default;
+            box-shadow: 0 0 20px red;
         }
     </style>
 </head>
@@ -163,6 +179,9 @@
         <div class="box3"><img src="volk.gif" class="img1" width="500px" height="380px" alt=""></div>
 
     </div>
+    <div style="box-shadow: 0 0 10px black; padding-top:10px; margin-top: 40px;">
+    <div class="caption"><h1>Какие вы сегодня?</h1></div>
+    
     <div class="container-photos">
 
         <div class="wrapper"><img class="ph1" src="hp.jpg" width="250px" alt="">
@@ -176,7 +195,7 @@
         </div>
 
     </div>
-
+</div>
 </body>
 
 </html>
