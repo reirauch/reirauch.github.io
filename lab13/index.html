@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab13</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        h2 {
+            transition: .2s linear;
+            cursor: default;
+            margin-top: 4px;
+        }
+
+        h2:hover {
+            transform: scale(1.1);
+            cursor: default;
+        }
+
+        .hrt {
+            transition: .2s linear;
+            margin: 0px 5px 0px 5px;
+        }
+
+        .hrt:hover {
+            transform: scale(1.1);
+        }
+
+
+        .title {
+            position: fixed;
+            background: linear-gradient(to bottom, rgb(255, 186, 255), white, rgba(255, 255, 255, 0.692));
+            box-shadow: 0 0 5px;
+            width: 100%;
+            padding: 5px 0px 5px 0px;
+            display: flex;
+            justify-content: center;
+            margin-top: -80px;
+            z-index: 9999;
+        }
+
+
+        .grid-1 {
+            margin-top: 80px;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 2fr 1fr 2fr;
+            
+
+        }
+
+        .box1 {
+            background-color: rgb(250, 109, 109);
+            box-shadow: 0 0 10px;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+        }
+
+        .box2 {
+            background-color: rgb(244, 200, 255);
+            text-align: center;
+            align-self: center;
+            box-shadow: 0 0 10px;
+            border-radius: 10px;
+            transition: .2s;
+        }
+        .box2:hover{
+            transform: scale(1.2);
+        }
+
+        .verse {
+            padding: 10px;
+            font-style: italic;
+            font-size: 17px;
+            color: rgb(167, 78, 194);
+            font-weight: bold;
+        }
+
+        .box3 {
+            background-color: rgb(172, 83, 255);
+            box-shadow: 0 0 10px;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+        }
+
+      
+
+        .img1 {
+            margin: 10px;
+            box-shadow: 0 0 10px black;
+            transition: .1s linear;
+            border-radius: 10px;
+        }
+        .img1:hover {
+            transform: scale(1.03);
+        }
+        .container-photos {
+            width: 100%;
+            display: flex;
+            margin-top: 50px;
+            box-shadow: 0 0 10px;
+            padding: 30px;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .wrapper{
+            padding: 10px;
+            background-color: thistle;
+            border-radius: 20px;
+            transition: .2s;
+            box-shadow: 0 0 10px black;
+        }
+        .wrapper:hover{
+            transform: scale(1.06);
+            box-shadow: 0 0 30px rgb(255, 0, 255);
+        }
+
+        .ph1 {
+            box-shadow: 0 0 5px;
+            border-radius: 10px;
+        }
+        h3{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title" align="center">
+        <h2>НАСТЯ</h2>
+        <a href="index1.html"><img class="hrt" src="hrt.png" width="40px" alt=""></a>
+        <h2>ПОЛИНА</h2>
+    </div>
+    <div class="grid-1">
+        <div class="box1"><img class="img1" src="volk2.gif" width="500px" alt=""></div>
+        <div class="box2">
+            <p class="verse">Дружба — это тёплый ветер,<br>
+                Дружба — это светлый мир,<br>
+                Дружба — солнце на рассвете,<br>
+                Для души весёлый пир. <br>
+                Дружба — это только счастье,<br>
+                Дружба — у людей одна. <br>
+                С дружбой не страшны ненастья, <br>
+                С дружбой — жизнь весной полна. <br>
+                Друг разделит боль и радость,<br>
+                Друг поддержит и спасёт. <br>
+                С другом — даже злая слабость<br>
+                В миг растает и уйдет. <br>
+                Верь, храни, цени же дружбу,<br>
+                Это высший идеал. <br>
+                Тебе она сослужит службу.
+            </p>
+
+        </div>
+        <div class="box3"><img src="volk.gif" class="img1" width="500px" height="380px" alt=""></div>
+
+    </div>
+    <div class="container-photos">
+
+        <div class="wrapper"><img class="ph1" src="hp.jpg" width="250px" alt="">
+            <h3 align="center">Праздничные</h3>
+        </div>
+        <div class="wrapper"><img class="ph1" src="akbar.jpg" width="250px" alt="">
+            <h3 align="center">Беззаботные</h3>
+        </div>
+        <div class="wrapper"><img class="ph1" src="ph1.jpg" width="250px" alt="">
+            <h3 align="center">Игривые</h3>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
