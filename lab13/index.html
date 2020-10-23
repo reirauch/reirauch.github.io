@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0">
     <title>lab13</title>
     <style>
         * {
@@ -45,60 +45,74 @@
             z-index: 9999;
         }
 
-        @media (min-width: 1300px){
-            .grid-1{
+        @media (min-width: 1300px) {
+            .grid-1 {
                 display: grid;
             }
+
             .box1 {
-            background-color: rgb(250, 109, 109);
-            box-shadow: 0 0 10px;
-            
-            }
-            .box2 {
-            background-color: rgb(244, 200, 255);
-            box-shadow: 0 0 10px;
-            }
-            .box3 {
-            background-color: rgb(172, 83, 255);
-            box-shadow: 0 0 10px;
-            
-            }
-            .top-container{
-                box-shadow: 0 0 10px black; 
+                background-color: rgb(250, 109, 109);
+                box-shadow: 0 0 10px;
+
             }
 
-        } @media (min-width: 600px){
-            .top-container{
-                box-shadow: 0 0 10px black; 
-            }}
+            .box2 {
+                background-color: rgb(244, 200, 255);
+                box-shadow: 0 0 10px;
+            }
+
+            .box3 {
+                background-color: rgb(172, 83, 255);
+                box-shadow: 0 0 10px;
+
+            }
+
+            .top-container {
+                box-shadow: 0 0 10px black;
+            }
+ 
+        }
+
+        @media (max-width: 600px){
+            .verse{
+            font-size : 25px;
+            }
+        }
+
+        @media (min-width: 600px) {
+            .top-container {
+                box-shadow: 0 0 10px black;
+            }
+        }
 
 
         .grid-1 {
             margin-top: 80px;
-            
+
             grid-gap: 10px;
             grid-template-columns: 2fr 1fr 2fr;
-            
+
 
         }
 
         .box1 {
-            
-          
+
+
             display: flex;
             justify-content: center;
             border-radius: 10px;
         }
 
         .box2 {
-          
+
             text-align: center;
             align-self: center;
-            
+
             border-radius: 10px;
             transition: .2s;
         }
-        .box2:hover{
+
+        .box2:hover {
             transform: scale(1.2);
         }
 
@@ -111,31 +125,37 @@
         }
 
         .box3 {
-         
-            
+
+
             display: flex;
             justify-content: center;
             border-radius: 10px;
         }
 
-      
+
 
         .img1 {
             margin: 10px;
             box-shadow: 0 0 10px black;
             transition: .1s linear;
             border-radius: 10px;
+            filter: blur(2px);
         }
+
         .img1:hover {
             transform: scale(1.03);
+            filter: blur(0px);
         }
-        .top-container{
-            
-            padding-top:10px; margin: 40px auto 0px;
-            
-            }
+
+        .top-container {
+
+            padding-top: 10px;
+            margin: 40px auto 0px;
+
+        }
+
         .container-photos {
-            
+
             width: 100%;
             display: flex;
             margin-top: 0px;
@@ -144,40 +164,46 @@
             align-items: center;
             flex-wrap: wrap;
         }
-        .wrapper{
+
+        .wrapper {
             padding: 10px;
             background-color: thistle;
             border-radius: 20px;
             transition: .2s;
             margin-top: 10px;
-            
+
         }
-        .wrapper:hover{
-            transform: scale(1.06);
+
+        .wrapper:hover {
+            transform: translateY(-20px);
             box-shadow: 0 0 30px rgb(255, 0, 255);
         }
 
         .ph1 {
-            
+
             box-shadow: 0 0 5px;
             border-radius: 10px;
         }
-        h3{
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        h3 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
-        .caption{
+
+        .caption {
             display: flex;
             justify-content: center;
             margin-top: 30px;
             font-family: monospace;
         }
-        h1{
+
+        h1 {
             padding: 10px;
             border: 2px solid;
             transition: .2s;
             cursor: default;
         }
-        h1:hover{
+
+        h1:hover {
             transform: scale(1.1);
             cursor: default;
             box-shadow: 0 0 20px red;
@@ -192,7 +218,7 @@
         <h2>ПОЛИНА</h2>
     </div>
     <div class="grid-1">
-        <div class="box1"><img class="img1" src="volk2.gif" width="500px" alt=""></div>
+        <div class="box1"><img class="img1" src="volk2.gif" width="90%" alt=""></div>
         <div class="box2">
             <p class="verse">Дружба — это тёплый ветер,<br>
                 Дружба — это светлый мир,<br>
@@ -212,26 +238,28 @@
             </p>
 
         </div>
-        <div class="box3"><img src="volk.gif" class="img1" width="500px" height="380px" alt=""></div>
+        <div class="box3"><img src="volk.gif" class="img1" width="90%" alt=""></div>
 
     </div>
     <div class="top-container">
-    <div class="caption"><h1>Какие вы сегодня?</h1></div>
-    
-    <div class="container-photos" align="center">
-
-        <div class="wrapper"><img class="ph1" src="hp.jpg" width="250px" alt="">
-            <h3 align="center">Праздничные</h3>
-        </div>
-        <div class="wrapper"><img class="ph1" src="akbar.jpg" width="250px" alt="">
-            <h3 align="center">Беззаботные</h3>
-        </div>
-        <div class="wrapper"><img class="ph1" src="ph1.jpg" width="250px" alt="">
-            <h3 align="center">Игривые</h3>
+        <div class="caption">
+            <h1>Какие вы сегодня?</h1>
         </div>
 
+        <div class="container-photos" align="center">
+
+            <div class="wrapper"><img class="ph1" src="hp.jpg" width="250px" alt="">
+                <h3 align="center">Праздничные</h3>
+            </div>
+            <div class="wrapper"><img class="ph1" src="akbar.jpg" width="250px" alt="">
+                <h3 align="center">Беззаботные</h3>
+            </div>
+            <div class="wrapper"><img class="ph1" src="ph1.jpg" width="250px" alt="">
+                <h3 align="center">Игривые</h3>
+            </div>
+
+        </div>
     </div>
-</div>
 </body>
 
 </html>
