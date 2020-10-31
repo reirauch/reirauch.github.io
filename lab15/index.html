@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>
+        wow
+    </title>
+    <style>
+        body {
+            background: url(bg1.jpg) 0 0/cover no-repeat fixed;
+            margin: 0;
+        }
+
+        .caption {
+            margin-top: 50px;
+            text-align: center;
+            font-family: 'poppins', sans-serif;
+            font-size: 23px;
+
+        }
+
+        .name_frnds {
+            text-align: center;
+            font-family: 'poppins', sans-serif;
+            font-size: 30px;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+
+        }
+
+        .text-caption {
+
+            padding: 10px;
+            width: 300px;
+            border: 2px solid black;
+        }
+
+
+        .flex-parent {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 50px 50px;
+            flex-wrap: wrap;
+        }
+
+        .x-sibl {
+            align-self: center;
+            transition: .2s;
+        }
+
+        .x-sibl:hover {
+            transform: scale(1.2);
+        }
+
+        .sibl1,
+        .sibl2 {
+            padding: 20px 20px 12px 20px;
+            box-shadow: 0 0 10px silver;
+            background: white;
+            display: block;
+            font-family: 'poppins', sans-serif;
+            text-align: center;
+            font-weight: 700;
+            transition: .2s;
+            margin: 15px;
+        }
+
+
+
+        ul li {
+            list-style: none;
+            background: url(ok.png) left 50%/20px 20px no-repeat;
+            padding: 0px 0px 0px 30px;
+            font-family: 'poppins', sans-serif;
+            font-size: 28px;
+            margin: 15px
+        }
+
+        .list-parent {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .box {
+            margin: 100px 20px 0px 20px;
+            display: grid;
+            grid-gap: 30px;
+            height: 1200px;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+
+        }
+
+        .item {
+
+            font-size: 22px;
+            font-family: 'poppins', sans-serif;
+            box-shadow: 0 0 10px rgb(53, 53, 53);
+            display: block;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            transition: .2s;
+
+        }
+
+
+
+        .item:nth-child(1) {
+            grid-column: span 2;
+            grid-row: span 2;
+            background: url(ul1.jpg) center/cover no-repeat;
+        }
+
+        .item:nth-child(3) {
+            grid-column: span 2;
+            grid-row: span 2;
+            background: url(da1.jpg) center/cover no-repeat;
+        }
+
+        .item:nth-child(2) {
+            grid-column: span 3;
+            grid-row: span 3;
+            background: url(ul2.jpg) center/cover no-repeat;
+        }
+
+        .item:nth-child(4) {
+            background: url(da5.jpg) center/cover no-repeat;
+        }
+
+        .item:nth-child(5) {
+            grid-column: span 2;
+            grid-row: span 3;
+            background: url(ul4.jpg) center/cover no-repeat;
+        }
+
+        .item:nth-child(6) {
+            grid-column: span 3;
+            grid-row: span 2;
+            background: url(da4.jpg) center 20%/cover no-repeat;
+        }
+
+        footer {
+            margin-top: 100px;
+            width: 100%;
+            background: url(bg11.jpg) left 30%/cover no-repeat;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        .link-vk {
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        a {
+
+            font-family: 'poppins', sans-serif;
+            text-decoration: none;
+            font-size: 22px;
+            font-family: 'poppins', sans-serif;
+            color: white;
+            font-weight: 700;
+            background: url(vk.png) left 50%/20px 20px no-repeat;
+            padding: 30px;
+            font-size: 22px;
+            font-family: 'poppins', sans-serif;
+        }
+
+        a:visited {
+            font-size: 22px;
+            font-family: 'poppins', sans-serif;
+            color: white;
+            background: url(vk.png) left 50%/20px 20px no-repeat;
+            padding: 30px;
+            font-size: 22px;
+            font-family: 'poppins', sans-serif;
+        }
+        a:active{
+            color: pink
+        }
+
+        .corp {
+            text-align: center;
+            color: white;
+            font-size: 28px;
+            font-family: 'poppins', sans-serif;
+        }
+
+        @media (max-width: 1300px) {
+            .x-sibl {
+                visibility: hidden;
+            }
+
+            .flex-parent {
+                display: block;
+                margin: 30px 30px 30px;
+            }
+
+            .sibl1,
+            .sibl2 {
+                background: none;
+                box-shadow: none;
+                font-size: larger;
+            }
+
+            .ul3,
+            .da3 {
+                width: 700px;
+                height: 500px;
+            }
+
+            .box {
+                grid-gap: 10px;
+                height: 900px;
+
+            }
+
+            .item {
+                box-shadow: none;
+                border: 1px solid black;
+            }
+
+        }
+
+        @media (max-width: 900px) {
+
+            .ul3,
+            .da3 {
+                width: 600px;
+                height: 400px;
+            }
+            .flex-parent {
+                display: block;
+                margin: 30px 30px 30px;
+            }
+            .box {
+                grid-gap: 10px;
+                height: 650px;
+            }
+
+        }
+
+        @media (max-width: 800px) {
+
+            .ul3,
+            .da3 {
+                width: 460px;
+                height: 320px;
+            }
+            .flex-parent {
+                display: block;
+                margin: 30px 30px 30px;
+            }
+            .sibl1,
+            .sibl2 {
+                font-size: 17px;
+            }
+
+            .box {
+                grid-gap: 10px;
+                height: 570px;
+            }
+
+            ul li {
+                font-size: 22px;
+            }
+        }
+
+        @media (max-width: 650px) {
+
+            .ul3,
+            .da3 {
+                width: 450px;
+                height: 300px;
+            }
+            .flex-parent {
+                display: block;
+                margin: 30px 30px 30px;
+            }
+            .sibl1,
+            .sibl2 {
+                font-size: 15px;
+            }
+
+            .box {
+                grid-gap: 10px;
+                height: 500px;
+            }
+
+            ul li {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 610px) {
+
+            .ul3,
+            .da3 {
+                width: 370px;
+                height: 270px;
+            }
+            .flex-parent {
+                display: block;
+                margin: 30px 5px 30px;
+            }
+            .sibl1,
+            .sibl2 {
+                font-size: 17px;
+            }
+
+            .box {
+                grid-gap: 10px;
+                height: 440px;
+            }
+
+            ul li {
+                font-size: 18px;
+            }
+        }
+
+        @media (min-width: 1300px) {
+            .item:hover {
+                transform: scale(1.02);
+            }
+
+            .sibl1:hover,
+            .sibl2:hover {
+                transform: scale(1.02);
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="caption">Friendship</div>
+    <div class="name_frnds">
+        <p class="text-caption">Ulyana x Darina</p>
+    </div>
+    <div class="flex-parent">
+        <div class="sibl1"><img class="ul3" src="ul3.jpg" width="500px" height="350px" alt="">
+            <p>Можно кинуть камень в волка, но не волка в камень!</p>
+        </div>
+        <img class="x-sibl" src="xxx.png" width="50px" height="50px" alt="">
+        <div class="sibl2"><img class="ul3" src="da3.jpg" width="500px" height="350px" alt="">
+            <p>Скажи мне кто твой друг и я скажу кто твой друг..</p>
+        </div>
+    </div>
+    <div class="list-parent">
+        <ul>
+            <li>Ulyana Kryzh</li>
+            <li>January 28, 2002</li>
+            <li>Minsk</li>
+        </ul>
+
+        <ul>
+            <li>Darina Belous</li>
+            <li>December 20, 2001</li>
+            <li>Minsk</li>
+        </ul>
+
+    </div>
+
+    <div class="box">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <footer>
+        <div class="footer-contactc">
+            <div class="link-vk">
+                <a href="https://vk.com/id237379557">
+                    Ulyana Kryzh
+                </a>
+                <a href="https://vk.com/id489584788">
+                    Darina Belous
+                </a>
+            </div>
+        </div>
+        <p class="corp">Rei Rauch Inc.</p>
+    </footer>
+</body>
+
+</html>
