@@ -59,6 +59,12 @@ body {
     margin: 15px;
 }
 
+img[tabindex="0"] {
+    cursor: zoom-in;
+}
+
+
+
 
 
 ul li {
@@ -86,18 +92,28 @@ ul li {
 }
 
 .item {
-
-    font-size: 22px;
-    font-family: 'poppins', sans-serif;
     box-shadow: 0 0 10px rgb(53, 53, 53);
-    display: block;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
     transition: .2s;
 
 }
 
+/* .textinfo {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    opacity: 0;
+    transition: .2s;
+}
+.textinfo:hover {
+    opacity: 1;
+}
+.inf{
+    margin: 0;
+    background:rgba(255, 255, 255, 0.815);
+    font-size: 22px;
+    font-family: 'poppins', sans-serif;
+    text-align: center;
+} */
 
 
 .item:nth-child(1) {
@@ -105,6 +121,7 @@ ul li {
     grid-row: span 2;
     background: url(ul1.jpg) center/cover no-repeat;
 }
+
 
 .item:nth-child(3) {
     grid-column: span 2;
@@ -164,6 +181,7 @@ a {
     padding: 30px;
     font-size: 22px;
     font-family: 'poppins', sans-serif;
+    transition: .2s;
 }
 
 a:visited {
@@ -277,7 +295,7 @@ a:active {
         font-size: larger;
         padding: 20px;
         background-color: white;
-    
+
         font-size: 17px;
     }
 
@@ -312,7 +330,7 @@ a:active {
         font-size: larger;
         padding: 20px;
         background-color: white;
-    
+
         font-size: 15px;
     }
 
@@ -347,7 +365,7 @@ a:active {
         font-size: larger;
         padding: 20px;
         background-color: white;
-    
+
         font-size: 17px;
     }
 
@@ -360,12 +378,14 @@ a:active {
         font-size: 18px;
     }
 }
-@media (max-width:450px){
-    .text-caption{
+
+@media (max-width:450px) {
+    .text-caption {
         font-size: 18px;
         width: 200px;
         padding: 5px;
     }
+
     .ul3,
     .da3 {
         width: 300px;
@@ -385,7 +405,7 @@ a:active {
         font-size: larger;
         padding: 12px;
         background-color: white;
-    
+
         font-size: 13px;
     }
 
@@ -397,11 +417,13 @@ a:active {
     ul li {
         font-size: 13px;
     }
-    a{
+
+    a {
         font-size: 18px;
         padding: 5px 0px 10px 20px;
     }
-    .corp{
+
+    .corp {
         font-size: 20px;
     }
 }
@@ -416,5 +438,8 @@ a:active {
     .sibl2:hover {
         transform: scale(1.02);
 
+    }
+    a:hover{
+        transform: translate(0px, -5px);
     }
 }
