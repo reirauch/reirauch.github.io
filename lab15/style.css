@@ -76,7 +76,7 @@ ul li {
     padding: 0px 0px 0px 30px;
     font-family: 'poppins', sans-serif;
     font-size: 28px;
-    margin: 15px
+    margin: 15px;
     
 }
 
@@ -182,9 +182,10 @@ a {
     color: white;
     font-weight: 700;
     background: url(vk.png) left 50%/20px 20px no-repeat;
-    padding: 30px;
+    padding: 5px 0px 5px 25px;
     font-size: 22px;
     font-family: 'poppins', sans-serif;
+    letter-spacing: 3px;
     transition: .2s;
 }
 
@@ -192,9 +193,10 @@ a:visited {
     font-size: 22px;
     font-family: 'poppins', sans-serif;
     color: white;
-    background: url(vk.png) left 50%/20px 20px no-repeat;
+    background: url(vk.png) left 44%/20px 20px no-repeat;
     padding: 30px;
     font-size: 22px;
+    
     font-family: 'poppins', sans-serif;
 }
 
