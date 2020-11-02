@@ -8,7 +8,7 @@ body {
     text-align: center;
     font-family: 'poppins', sans-serif;
     font-size: 23px;
-    letter-spacing: 9px;
+    letter-spacing: 10px;
 
 }
 
@@ -30,6 +30,7 @@ body {
     border: 2px solid black;
     background: rgba(255, 255, 255, 0);
     transition: .2s;
+    
 }
 
 
@@ -48,7 +49,10 @@ body {
 .x-sibl:hover {
     transform: scale(1.2);
 }
-
+.ul3{
+    width:500px;
+    height:350px;
+}
 .sibl1,
 .sibl2 {
     padding: 20px 20px 12px 20px;
@@ -210,7 +214,53 @@ a:active {
     font-size: 28px;
     font-family: 'poppins', sans-serif;
 }
+@media (min-width: 1800px){
+    .ul3,
+    .da3 {
+        width: 700px;
+        height: 540px;
+        box-shadow: 0 0 10px black;
+    }
 
+    .box {
+        grid-gap: 10px;
+        height: 1600px;
+
+    }
+}
+
+@media (min-width: 1600px){
+.ul3,
+    .da3 {
+        width: 620px;
+        height: 480px;
+        box-shadow: 0 0 10px black;
+    }
+
+    .box {
+        grid-gap: 10px;
+        height: 1600px;
+
+    }
+}
+@media (min-width: 1300px) {
+    .item:hover {
+        transform: scale(1.02);
+    }
+
+    .sibl1:hover,
+    .sibl2:hover {
+        transform: scale(1.02);
+
+    }
+    
+    a:hover{
+        transform: translate(0px, -5px);
+    }
+    .text-caption:hover{
+        background: white;
+    }
+}
 @media (max-width: 1300px) {
     .x-sibl {
         display: none;
@@ -239,7 +289,7 @@ a:active {
 
     .box {
         grid-gap: 10px;
-        height: 900px;
+        height: 1000px;
 
     }
 
@@ -435,20 +485,4 @@ a:active {
 }
 
 
-@media (min-width: 1300px) {
-    .item:hover {
-        transform: scale(1.02);
-    }
 
-    .sibl1:hover,
-    .sibl2:hover {
-        transform: scale(1.02);
-
-    }
-    a:hover{
-        transform: translate(0px, -5px);
-    }
-    .text-caption:hover{
-        background: white;
-    }
-}
