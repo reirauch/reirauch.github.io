@@ -96,7 +96,8 @@ h1 {
 }
 
 .box {
-    margin-top: 50px;
+    margin-top: 70px;
+    padding-bottom: 40px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -166,5 +167,10 @@ h1 {
     }
     img:hover{
         filter: blur(0px)
+    }
+}
+@media (min-width:1600px){
+    img{
+        width: 400px;
     }
 }
