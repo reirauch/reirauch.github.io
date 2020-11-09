@@ -1,0 +1,530 @@
+body {
+    background: url(../fon.jpg) 50% 0/cover no-repeat fixed;
+    margin: 0;
+}
+
+.caption {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    font-size: 23px;
+    letter-spacing: 10px;
+
+}
+
+.name_frnds {
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+
+}
+
+.text-caption {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid black;
+    background: rgba(255, 255, 255, 0);
+    transition: .2s;
+    animation-name: wiggle;
+    animation-iteration-count: infinite;
+    animation-duration: .5s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(-3deg);
+    }
+
+
+
+    100% {
+        transform: rotate(3deg);
+    }
+}
+
+
+.flex-parent {
+    display: block;
+    margin: 40px 50px 50px;
+
+}
+
+.container {
+    width: 700px;
+    margin: auto;
+}
+
+
+
+
+.sibl1__photo {
+    width: 350px;
+    height: 350px;
+    background: url(../katya1.jpg) 50% 5%/cover no-repeat;
+    box-shadow: 0 0 10px rgb(143, 143, 143);
+
+}
+
+.sibl2__photo {
+    width: 350px;
+    height: 350px;
+    background: url(../sof1.jpg) 50% 0/cover no-repeat;
+    box-shadow: 0 0 10px rgb(143, 143, 143);
+
+}
+
+.sibl1,
+.sibl2 {
+    padding: 30px 20px 30px 20px;
+    box-shadow: 0 0 10px silver;
+    background: white;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    font-family: 'poppins', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    transition: .2s;
+    margin: 30px;
+}
+
+.sibl1 p,
+.sibl2 p {
+    font-weight: 700;
+    align-self: center;
+    padding: 0px 20px 0px 20px;
+}
+
+
+
+.box {
+    margin: 100px 20px 0px 20px;
+    display: grid;
+    grid-gap: 30px;
+    height: 1200px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+}
+
+.item {
+    box-shadow: 0 0 10px rgb(53, 53, 53);
+    transition: .2s;
+
+}
+
+/* .textinfo {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    opacity: 0;
+    transition: .2s;
+}
+.textinfo:hover {
+    opacity: 1;
+}
+.inf{
+    margin: 0;
+    background:rgba(255, 255, 255, 0.815);
+    font-size: 22px;
+    font-family: 'poppins', sans-serif;
+    text-align: center;
+} */
+
+
+.item:nth-child(1) {
+    grid-column: span 1;
+    grid-row: span 2;
+    background: url(../kat2.jpg) 50% 0/cover no-repeat;
+}
+
+.item:nth-child(2) {
+    grid-column: span 2;
+    grid-row: span 2;
+    background: url(../sof2.jpg) center/cover no-repeat;
+    
+}
+
+.item:nth-child(4) {
+    grid-column: span 1;
+    grid-row: span 2;
+    background: url(../kat3.jpg) center/cover no-repeat;
+}
+
+
+
+.item:nth-child(3) {
+    
+    background: url(../sof3.jpg) center/cover no-repeat;
+}
+
+.item:nth-child(5) {
+    grid-row: span 2;
+    grid-column: span 2;
+    background: url(../sof6.jpg) 80% 0/cover no-repeat;
+}
+
+.item:nth-child(6) {
+    grid-column: span 1;
+    grid-row: span 2;
+    background: url(../kat4.jpg) center/cover no-repeat;
+}
+.item:nth-child(7) {
+    background: url(../sof4.jpg) center/cover no-repeat;
+}
+
+footer {
+    margin-top: 100px;
+    width: 100%;
+    background: silver left 30%/cover no-repeat;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+
+
+.corp {
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    font-family: 'poppins', sans-serif;
+}
+
+@media (min-width: 1800px) {
+    .container {
+        width: 1300px;
+        margin: auto;
+    }
+
+    .sibl1 p,
+    .sibl2 p {
+        font-size: 30px;
+        font-weight: 700;
+        align-self: center;
+        padding: 0px 20px 0px 20px;
+    }
+
+
+    .sibl1__photo {
+        width: 700px;
+        height: 700px;
+        background: url(../katya1.jpg) 50% 5%/cover no-repeat;
+        box-shadow: 0 0 10px rgb(143, 143, 143);
+
+    }
+
+    .sibl2__photo {
+        width: 700px;
+        height: 700px;
+        background: url(../sof1.jpg) 50% 0/cover no-repeat;
+        box-shadow: 0 0 10px rgb(143, 143, 143);
+
+    }
+
+
+    .box {
+        grid-gap: 10px;
+        height: 1600px;
+
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        width: 1000px;
+        margin: auto;
+    }
+
+    .sibl1 p,
+    .sibl2 p {
+        font-size: 30px;
+        font-weight: 700;
+        align-self: center;
+        padding: 0px 20px 0px 20px;
+    }
+
+
+    .sibl1__photo {
+        width: 600px;
+        height: 600px;
+        background: url(../katya1.jpg) 50% 5%/cover no-repeat;
+        box-shadow: 0 0 10px rgb(143, 143, 143);
+
+    }
+
+    .sibl2__photo {
+        width: 500px;
+        height: 500px;
+        background: url(../sof1.jpg) 50% 0/cover no-repeat;
+        box-shadow: 0 0 10px rgb(143, 143, 143);
+
+    }
+
+
+    .box {
+        grid-gap: 10px;
+        height: 1600px;
+
+    }
+}
+
+@media (min-width: 1300px) {
+    .item:hover {
+        transform: scale(1.02);
+    }
+
+    .sibl1:hover,
+    .sibl2:hover {
+        transform: scale(1.02);
+
+    }
+
+    a:hover {
+        transform: translate(0px, -5px);
+    }
+
+    .text-caption:hover {
+        background: white;
+    }
+}
+
+@media (max-width: 1300px) {
+    .x-sibl {
+        display: none;
+    }
+
+    .flex-parent {
+        display: flex;
+        margin: 30px 30px 30px;
+    }
+
+    .sibl1,
+    .sibl2 {
+        background: none;
+        box-shadow: none;
+        font-size: larger;
+        padding: 20px;
+        background-color: white;
+    }
+
+    .ul3,
+    .da3 {
+        width: 700px;
+        height: 500px;
+        box-shadow: 0 0 10px black;
+    }
+
+    .box {
+        grid-gap: 10px;
+        height: 1000px;
+
+    }
+
+    .item {
+        box-shadow: none;
+        border: 1px solid black;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    
+
+    .flex-parent {
+        display: flex;
+        margin: 30px 30px 30px;
+    }
+
+    .sibl1,
+    .sibl2 {
+        background: none;
+        box-shadow: none;
+        font-size: larger;
+        padding: 20px;
+        background-color: white;
+    }
+
+    .box {
+        grid-gap: 10px;
+        height: 650px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .flex-parent {
+        display: flex;
+        margin: 30px 30px 30px;
+    }
+    .container {
+        width: 600px;
+        margin: auto;
+    }
+
+    .sibl1 p,
+    .sibl2 p {
+        font-size: 30px;
+        font-weight: 700;
+        align-self: center;
+        padding: 0px 20px 0px 20px;
+    }
+
+
+    .sibl1__photo {
+        width: 300px;
+        height: 300px;
+        background: url(../katya1.jpg) 50% 5%/cover no-repeat;
+        box-shadow: 0 0 10px rgb(143, 143, 143);
+
+    }
+
+    .sibl2__photo {
+        width: 300px;
+        height: 300px;
+        background: url(../sof1.jpg) 50% 0/cover no-repeat;
+        box-shadow: 0 0 10px rgb(143, 143, 143);
+
+    }
+    
+
+    .flex-parent {
+        display: flex;
+        margin: 30px 30px 30px;
+    }
+
+    .sibl1,
+    .sibl2 {
+        background: none;
+        box-shadow: none;
+        font-size: larger;
+        padding: 20px;
+        background-color: white;
+
+        font-size: 17px;
+    }
+
+    .box {
+        grid-gap: 10px;
+        height: 570px;
+    }
+
+    ul li {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    
+
+    .flex-parent {
+        display: flex;
+        margin: 30px 30px 30px;
+    }
+
+    .sibl1,
+    .sibl2 {
+        background: none;
+        box-shadow: none;
+        font-size: larger;
+        padding: 20px;
+        background-color: white;
+
+        font-size: 15px;
+    }
+
+    .box {
+        grid-gap: 10px;
+        height: 500px;
+    }
+
+    ul li {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 610px) {
+
+    
+
+    .flex-parent {
+        display: flex;
+        margin: 30px 30px 30px;
+    }
+
+    .sibl1,
+    .sibl2 {
+        background: none;
+        box-shadow: none;
+        font-size: larger;
+        padding: 20px;
+        background-color: white;
+
+        font-size: 17px;
+    }
+
+    .box {
+        grid-gap: 10px;
+        height: 440px;
+    }
+
+    ul li {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:450px) {
+    .text-caption {
+        font-size: 18px;
+        width: 200px;
+        padding: 5px;
+    }
+
+    
+
+    .flex-parent {
+        display: flex;
+        margin: 30px 30px 30px;
+    }
+
+    .sibl1,
+    .sibl2 {
+        background: none;
+        box-shadow: none;
+        font-size: larger;
+        padding: 12px;
+        background-color: white;
+
+        font-size: 13px;
+    }
+
+    .box {
+        grid-gap: 5px;
+        height: 380px;
+    }
+
+    ul li {
+        font-size: 13px;
+    }
+
+    a {
+        font-size: 18px;
+        padding: 5px 0px 10px 20px;
+    }
+
+    .corp {
+        font-size: 20px;
+    }
+}
