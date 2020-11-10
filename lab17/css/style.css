@@ -207,7 +207,7 @@ footer {
 
 }
 
-@media (min-width: 1800px) {
+@media (max-width: 1800px) {
     .container {
         width: 1300px;
         margin: auto;
@@ -246,7 +246,7 @@ footer {
     }
 }
 
-@media (min-width: 1600px) {
+@media (max-width: 1600px) {
     .container {
         width: 1000px;
         margin: auto;
