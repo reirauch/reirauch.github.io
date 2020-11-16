@@ -71,12 +71,11 @@
     <h3 class="qu">Понравился сайт?</h3>
     <form onSubmit='return confirm("Спасибо за отзыв!");'>
         <input class="button" name=delall type=submit value="Нет">
-        <input  class="button" name=delall type=submit value="Пойдет">
+        <input class="button" name=delall type=submit value="Пойдет">
     </form>
     <script>
-        alert('Добрый день:)')
         let arr = ['1st', '2nd', '3rd']
-        document.write(arr[0]+ ' ' + arr[1])
+        document.write(arr[0] + ' ' + arr[1])
         let delLast = arr.pop()
         let addLast = arr.push('newElement')
         document.write(' ')
@@ -84,18 +83,17 @@
         document.write(' ')
         let addFirst = arr.unshift('1stNew')
         let addLast1 = arr.push('newLastElement')
-        for (let i =0; i < arr.length; i++){
+        for (let i = 0; i < arr.length; i++) {
             document.write(' ')
             document.write(arr[i])
         }
-        
+
         let string = '«Every man in the world! Every woman on earth!»'
-        let rep=/(wo)?man/g
+        let rep = /(wo)?man/g
         let newString = string.replace(rep, 'person')
         document.write(' ')
         document.write(newString)
         rep.compile(rep);
-
     </script>
 </body>
 
