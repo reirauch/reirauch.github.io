@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="intro">
+            <h1 class="intro__title">
+                Туркменистан
+            </h1>
+        </div>
+    </section>
+    <section>
+        <div class="info">
+            <div class="info__descr">
+                <div class="info__images">
+                    <div class="info__president">
+                        <h3 class="name">Гурбангулы Бердымухамедов</h3>
+                    </div>
+                    <div class="info__flag">
+                        <h3 class="flag">Флаг Туркменистана</h3>
+                    </div>
+                </div>
+                <p class="info__text">Итак, перед нами Туркменистан, одна из самых закрытых и загадочных стран в мире.
+                    Как же так вышло? Все очень просто: после развала Союза у руля оказался Сапармурат Ниязов, более
+                    известный нам как Туркменбаши (глава туркмен) или Вечно Великий Сапармурат Туркменбаши. На самом
+                    деле обычный комнатный диктатор у которого от бабла и безграничной власти снесло крышу. </p>
+                <p class="info__text">В 2006 году у Туркменбаши сердце не выдержало смотреть на всю эту красоту, и на
+                    трон сел Гурбангулы Бердымухамедов. Ну как на трон... Были честные выборы, на которых он набрал 89%.
+                    Гурбангулы решил приоткрыть форточку. Он вернул туркменам балет, цирк и оперу, разрешил вновь ходить
+                    с золотыми зубами, а лик Туркменбаши на туркменских деньгах заменили портреты туркменских мудрецов и
+                    поэтов.
+                    Но вскоре и у Гурбангулы башню снесло, и вот уже его портреты украшают всё, что можно украсить, его
+                    статуи потихоньку занимают площади городов Туркменистана.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+
+        <div class="block">
+            <img src="gaz.jpg" alt="" class="block__photo">
+            <p class="block__descr">Первое, что видишь в самолете: в кармане каждого кресла будет лежать свежая
+                туркменская газетка, с первой полосы которой на вас тоже будет смотреть светлый лик Бердымухамедова.
+            </p>
+        </div>
+        <div class="block">
+            <img src="jor.jpg" alt="" class="block__photo">
+            <p class="block__descr">Если вы захотите немного отвлечься и почитать журнал авиакомпании, то удивитесь,
+                ведь с первой страницы журнала на вас опять будет смотреть Бердымухамедов, прямо с того места,
+                откуда обычно смотрит директор авиакомпании. И вот тут вы поймете, что Бердымухамедов – директор
+                всего, что есть в Туркменистане, он повелитель птиц и зверей, по утрам для него восходит солнце,
+                чтобы освещать его путь, и вечерами солнце садится, чтобы утром Бердымухамедов опять мог явить
+                своему народу чудо.</p>
+        </div>
+        <div class="block">
+            <img src="sam.jpg" alt="" class="block__photo">
+            <p class="block__descr">Если бы Сталин жил сегодня, он бы построил Ашхабад таким, каким его начал
+                строить Ниязов и продолжает строить Бердымухамедов.</p>
+        </div>
+        </div>
+    </section>
+    <h3 class="qu">Понравился сайт?</h3>
+    <form onSubmit='return confirm("Спасибо за отзыв!");'>
+        <input class="button" name=delall type=submit value="Нет">
+        <input  class="button" name=delall type=submit value="Пойдет">
+    </form>
+    <script>
+        alert('Добрый день:)')
+        let arr = ['1st', '2nd', '3rd']
+        document.write(arr[0]+ ' ' + arr[1])
+        let delLast = arr.pop()
+        let addLast = arr.push('newElement')
+        document.write(' ')
+        document.write(arr[2])
+        document.write(' ')
+        let addFirst = arr.unshift('1stNew')
+        let addLast1 = arr.push('newLastElement')
+        for (let i =0; i < arr.length; i++){
+            document.write(' ')
+            document.write(arr[i])
+        }
+        
+        let string = '«Every man in the world! Every woman on earth!»'
+        let rep=/(wo)?man/g
+        let newString = string.replace(rep, 'person')
+        document.write(' ')
+        document.write(newString)
+        rep.compile(rep);
+
+    </script>
+</body>
+
+</html>
