@@ -29,7 +29,7 @@ body {
     transition: 0.3s;
 }
 .block__img:hover{
-    transform: translateY(-40px);
+    transform: translateY(-40px) scale(1.1);
     box-shadow: 0 0 20px rgb(75, 75, 75);
 }
 
