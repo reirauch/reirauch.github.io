@@ -1,25 +1,58 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Узел документа -->
 <html lang="en">
+<!-- Корневой узел -->
+
 <head>
+    <!-- Узел элемента -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Href - узел атрибута -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Href - узел атрибута -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
-    <title>lab20</title>
+    <title>lab20</title><!-- Узел элемента -->
 </head>
+
 <body>
+    <!-- Узел элемента -->
     <div class="block">
+        <!-- Узел элемента -->
         <div class="container">
-            <img class="block__img" src="ce.jpg" alt="">
+            <!-- Узел элемента -->
+            <img class="block__img" src="ce.jpg" alt=""> <!-- Узел элемента -->
+            <!-- Src - узел атрибута -->
             <div class="block__title">
-                <h1>Shouyou Hinata</h1>
+                <!-- Узел элемента -->
+                <h1>Shouyou Hinata
+                    <!-- Текстовый узел -->
+                </h1> <!-- Узел элемента -->
             </div>
-            <p class="block__descr">
-                Главный герой истории. Ученик первого класса старшей школы Карасуно. Отличительная черта Хинаты — невероятно высокие прыжки. Он занимался развитием ног, дабы компенсировать свой рост. Присоединяется к команде старшей школы Карасуно и мгновенно поражает её своими способностями. Несмотря на то, что он ещё совсем «зелёный» и у него нет опыта настоящей игры в волейбольной команде, Сёё стремительно растёт в своих умениях с каждым матчем.
-            </p>
+            <div class="block__info">
+                <p id="block__descr">
+                    <!-- Узел элемента -->
+
+                    <!-- Текстовый узел -->
+                </p>
+                <p class="block__warning">Несмотря на то, что он ещё совсем «зелёный» и у него нет опыта настоящей игры в
+                    волейбольной команде, Сёё стремительно растёт в своих умениях с каждым матчем. <!-- Текстовый узел --></p>
+                <div id="block__log">
+                    <p>Он занимался развитием ног, дабы компенсировать свой рост. Присоединяется к команде старшей школы Карасуно и мгновенно поражает её своими способностями. </p>
+                </div>
+            </div>
+
+
         </div>
-    </div>
+
+        <script>
+            document.getElementById('block__descr').innerHTML =
+                'Главный герой истории. Ученик первого класса старшей школы Карасуно. Отличительная черта Хинаты — невероятно высокие прыжки.'
+            let warn = document.getElementsByClassName('block__warning') 
+            for (let i = 0; i < warn.length; i++) {
+                warn[i].style.fontStyle = 'italic'
+            }
+            let llog = document.getElementById('block__log')
+            llog.style.fontWeight = 'bold'
+        </script>
 </body>
+
 </html>
