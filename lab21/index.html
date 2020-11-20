@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab21</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&;display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="main">
+        <div class="time">
+            <div class="time__hours" id="h"></div>
+            <div class="time__mins" id="m"></div>
+            <div class="time__secs" id="s"></div>
+        </div>
+        <div class="character">
+            <div class="character__block">
+                <img src="levi.jpg" alt="" class="photo">
+                <div class="character__info">
+                    <h1 class="character__name">Levi Ackerman</h1>
+                    <div class="character__descr">Капрал разведывательного отряда, а также капитан отряда специальных
+                        операций. Известен как сильнейший солдат человечества. В бою капрал всегда хладнокровен и точен.
+                        Но
+                        в стрессовых ситуациях его может охватить нешуточная ярость, отчего действия Леви выглядят
+                        жестокими.</div>
+                    <form action="" class="character__btn">
+                        <input class="btn" type="button" value="Push it!" onclick="newWindow()">
+                        <input class="btn" type="button" value="Write smth." id="show-button">
+                        <input class="btn" type="button" value="Alert" onclick="alert('Alert')">
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </section>
+    <div id="prompt-form-container">
+        <form id="prompt-form">
+          <div id="prompt-message"></div>
+          <input class="btn1" name="text" type="text">
+          <input class="btn1" type="submit" value="Ok">
+          <input class="btn1" type="button" name="cancel" value="Отмена">
+        </form>
+    </div>
+
+    <script>
+        document.getElementsByTagName('body')[0].onload = function startTime() {
+            let td = new Date()
+            let h = td.getHours()
+            let m = td.getMinutes()
+            let s = td.getSeconds()
+            h = checkTime(h)
+            m = checkTime(m)
+            s = checkTime(s)
+            document.getElementById('h').innerHTML = h
+            document.getElementById('m').innerHTML = m
+            document.getElementById('s').innerHTML = s
+            var t = setTimeout(startTime, 5000);
+        }
+
+        function newWindow() {
+            let id
+            id = window.open()
+            id.focus()
+            id.document.open()
+            id.document.write('<h1>say what?</h1>')
+            id.document.write('<img src="sw.gif" alt=""></img>')
+            id.document.write('<form><input type="button" value="close" onClick="window.close()"> </form>')
+            id.document.close
+        }
+
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i
+            };
+            return i;
+        }
+
+        function showCover() {
+            let coverDiv = document.createElement('div');
+            coverDiv.id = 'cover-div';
+
+            // убираем возможность прокрутки страницы во время показа модального окна с формой
+            document.body.style.overflowY = 'hidden';
+
+            document.body.append(coverDiv);
+        }
+
+        function hideCover() {
+            document.getElementById('cover-div').remove();
+            document.body.style.overflowY = '';
+        }
+
+        function showPrompt(text, callback) {
+            showCover();
+            let form = document.getElementById('prompt-form');
+            let container = document.getElementById('prompt-form-container');
+            document.getElementById('prompt-message').innerHTML = text;
+            form.text.value = '';
+
+            function complete(value) {
+                hideCover();
+                container.style.display = 'none';
+                document.onkeydown = null;
+                callback(value);
+            }
+
+            form.onsubmit = function () {
+                let value = form.text.value;
+                if (value == '') return false; // игнорируем отправку пустой формы
+
+                complete(value);
+                return false;
+            };
+
+            form.cancel.onclick = function () {
+                complete(null);
+            };
+
+            document.onkeydown = function (e) {
+                if (e.key == 'Escape') {
+                    complete(null);
+                }
+            };
+
+            let lastElem = form.elements[form.elements.length - 1];
+            let firstElem = form.elements[0];
+
+            lastElem.onkeydown = function (e) {
+                if (e.key == 'Tab' && !e.shiftKey) {
+                    firstElem.focus();
+                    return false;
+                }
+            };
+
+            firstElem.onkeydown = function (e) {
+                if (e.key == 'Tab' && e.shiftKey) {
+                    lastElem.focus();
+                    return false;
+                }
+            };
+
+            container.style.display = 'block';
+            form.elements.text.focus();
+        }
+
+        document.getElementById('show-button').onclick = function () {
+            showPrompt("Input text", function (value) {
+                alert("Result " + value);
+            });
+        };
+    </script>
+</body>
+
+</html>
