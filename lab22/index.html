@@ -14,11 +14,7 @@
         <div class="time__mins" id="m"></div>
         <div class="time__secs" id="s"></div>
     </div>
-    <div class="arr" id="massive">
-        <div id="1st"></div>
-        <div id="2nd"></div>
-        <div id="3rd"></div>
-    </div>
+    <div class="arr" id="massive"> </div>
     <div id="minel"></div>
     <div id="pownum"></div>
     <script>
@@ -35,7 +31,6 @@
             document.getElementById('m').innerHTML = m
             document.getElementById('s').innerHTML = s
             var t = setTimeout(startTime, 5000);
-            alert('Alert every 5s')
             
         }
 
@@ -50,29 +45,42 @@
         document.write('Browser is ' + navigator.appName + '<br><br>')
         document.write('Version is ' + navigator.appVersion)
 
-        let arr = ['1 element', '2 element', '3 element']
+        let inp = prompt('Length of array: ')
+        let arr = new Array
+        arr.length = inp
+        console.log(arr.length)
+ 
 
-        function outputArr() {
-            let st1 = arr[0]
-            let nd2 = arr[1]
-            let rd3 = arr[2]
-            document.getElementById('1st').innerHTML = st1
-            document.getElementById('2nd').innerHTML = nd2
-            document.getElementById('3rd').innerHTML = rd3
+        function outputArr(){
+            for (let i = 0; i < arr.length; i++) {
+                arr[i] = prompt('Input element №' + i + ':' )  
+            }
+            document.getElementById('massive').innerHTML = arr
+            console.log(arr)
         }
         outputArr()
+
+        // function outputArr() {
+        //     let st1 = arr[0]
+        //     let nd2 = arr[1]
+        //     let rd3 = arr[2]
+        //     document.getElementById('1st').innerHTML = st1
+        //     document.getElementById('2nd').innerHTML = nd2
+        //     document.getElementById('3rd').innerHTML = rd3
+        // }
+        // outputArr()
 
         function  minPar(x, y) {
             let m = Math.min(x,y)
             document.getElementById('minel').innerHTML = 'Min element is '+ m
         }
-        let x = 10
-        let y = 20
+        let x = prompt('Input num №1:')
+        let y = prompt('Input num №2:')
         minPar(x,y)
 
 
-        let n = 2
-        let np =0
+        let n = prompt('Input num №3:')
+        let np = 0
         function powNum(x) {
            return np = Math.pow(x, 2)
             
@@ -81,7 +89,7 @@
             powNum(n)
             document.getElementById('pownum').innerHTML = 'n = ' + n + ' to the power 2 is ' + np
         }
-        outputNum(n);
+        outputNum(n)
 
 
 
