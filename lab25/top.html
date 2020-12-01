@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="time">
+        <div class="time__hours" id="h"></div>
+        <div class="time__mins" id="m"></div>
+        <div class="time__secs" id="s"></div>
+    </div>
+    <button class="header__signin" onclick="stopTime()">Остановите время</button>
+    <script>
+        let t =null;
+        document.getElementsByTagName('body')[0].onload = function startTime() {
+            let td = new Date()
+            let h = td.getHours()
+            let m = td.getMinutes()
+            let s = td.getSeconds()
+            h = checkTime(h)
+            m = checkTime(m)
+            s = checkTime(s)
+            document.getElementById('h').innerHTML = h
+            document.getElementById('m').innerHTML = m
+            document.getElementById('s').innerHTML = s
+            t = setTimeout(startTime, 1000)
+        }
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i
+            };
+            return i;
+        }
+        function stopTime() {
+            clearTimeout(t)
+            t = null
+        }
+    </script>
+</body>
+
+</html>

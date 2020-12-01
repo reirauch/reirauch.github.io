@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="button" value="window.confirm" class="header__signin" onclick="if (window.confirm('window.confirm')==true)
+        {window.alert('true')}
+    else {window.alert('false')}">
+    </form>
+    <button button class="header__signin" onclick="winOp()">window.open</button>
+
+
+
+    <script>
+        function winOp() {
+           let newW = window.open('', 'gif', 'height=600, width=700, top=10,left=10')
+           newW.document.write('<img height="500px" width="600px" src="gf.gif">')
+           newW.document.write('<button style="padding: 10px 20px; font-size: 18px;" onclick="window.close()">close</button>')
+        }
+       
+    </script>
+</body>
+
+</html>
