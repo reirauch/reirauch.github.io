@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LAB27</title>
+</head>
+
+<body>
+    <section class="title">
+        <h1 class="title__text">Волк с Уолл-стрит</h1>
+    </section>
+    <section class="top__desc">
+        <div class="desc">
+            <img class="desc__img" src="img1.jpg" onmouseout="this.src='img1.jpg'"
+            onmouseover="this.src='img1-1.jpg'" alt="">
+            <p class="desc__text">1987 год. Джордан Белфорт становится брокером в успешном инвестиционном банке. Вскоре
+                банк закрывается после внезапного обвала индекса Доу-Джонса. По совету жены Терезы Джордан устраивается
+                в небольшое заведение, занимающееся мелкими акциями. Его настойчивый стиль общения с клиентами и
+                врождённая харизма быстро даёт свои плоды. Он знакомится с соседом по дому Донни, торговцем, который
+                сразу находит общий язык с Джорданом и решает открыть с ним собственную фирму. В качестве сотрудников
+                они нанимают нескольких друзей Белфорта, его отца Макса и называют компанию «Стрэттон Оукмонт». В
+                свободное от работы время Джордан прожигает жизнь: лавирует от одной вечеринки к другой, вступает в
+                сексуальные отношения с проститутками, употребляет множество наркотических препаратов, в том числе
+                кокаин и кваалюд. Однажды наступает момент, когда быстрым обогащением Белфорта начинает интересоваться
+                агент ФБР...</p>
+        </div>
+    </section>
+    <section class="gallery">
+        <img src="gal1.jpg" alt="" id="img1" class="gallery__img" onclick="imgsrc1()">
+        <img src="gal-2.jpg" alt="" id="img2" class="gallery__img" onclick="imgsrc2()">
+        <img src="gal3.jpg" alt="" id="img3" class="gallery__img" onclick="imgsrc3()">
+    </section>
+    <script language="javascript">
+            var i=0;
+            var image=document.getElementById("img1");
+            var imgs=new Array('gal1.jpg','gal1-1.jpg'); //Добавте свои картинки через запятую
+            var j=imgs.length;
+            function imgsrc1(){
+                if (i!=(j-1))
+                   {i++;}
+            image.src=imgs[i];}
+
+
+            var ii=0;
+            var imagee=document.getElementById("img2");
+            var imgss=new Array('gal-2.jpg','gal2.jpg'); //Добавте свои картинки через запятую
+            var jj=imgss.length;
+            function imgsrc2(){
+                if (ii!=(jj-1))
+                   {ii++;}
+            imagee.src=imgss[ii];}
+
+
+            var iii=0;
+            var imageee=document.getElementById("img3");
+            var imgsss=new Array('gal3.jpg','gal-3.jpg'); //Добавте свои картинки через запятую
+            var jjj=imgsss.length;
+            function imgsrc3(){
+                if (iii!=(jjj-1))
+                   {iii++;}
+
+            imageee.src=imgsss[iii];}
+            
+    </script>
+</body>
+
+</html>
