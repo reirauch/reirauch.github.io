@@ -18,6 +18,7 @@
                 <a href="#" id="toHome" class="header__link">Начало</a>
                 <a href="#" id="toAbout" class="header__link">Обо мне</a>
                 <a href="#" id="toPhoto" class="header__link">Фото</a>
+                <a href="#" id="toFooter" class="header__link">Контакт</a>
             </div>
         </div>
     </header>
@@ -59,7 +60,7 @@
             </div>
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer__container">
             <div class="footer__title">ReiRauch Inc.</div>
             <a href="https://www.linkedin.com/in/andrew-piskun-361b27201/" class="footer__link"><img class="footer__img"
@@ -95,6 +96,12 @@
 
         link3.addEventListener('click', ()=> {
             scrollTo(photo)
+        })
+        var link4 = document.querySelector('#toFooter')
+        var footer = document.querySelector('#footer')
+
+        link4.addEventListener('click', ()=> {
+            scrollTo(footer)
         })
     </script>
 </body>
