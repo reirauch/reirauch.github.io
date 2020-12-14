@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <title>Profile</title>
+</head>
+
+<body>
+    <header class="header" >
+        <div class="header__container">
+            <a href="" class="header__name">Андрей Пискун</a>
+            <div class="header__nav">
+                <a href="#" id="toHome" class="header__link">Начало</a>
+                <a href="#" id="toAbout" class="header__link">Обо мне</a>
+                <a href="#" id="toPhoto" class="header__link">Фото</a>
+                <a href="https://www.linkedin.com/in/andrew-piskun-361b27201/" class="header__link"><img src="hed.png"
+                        alt="" class="header__logo"></a>
+            </div>
+        </div>
+    </header>
+    <div class="title" id="home">
+        <div class="title__container">
+            <div class="title__photo"><img src="bgtitle.jpg" alt="" class="title__img"></div>
+            <div class="title__name">Андрей Пискун</div>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="about__container">
+            <div class="about__title">
+                Привет, я Андрей Пискун.
+            </div>
+            <div class="about__text">
+                Мне 19 лет, я из города Березино, но сейчас живу в Минске, так как учусь в Академии управления, уже
+                второй курс так-то!
+            </div>
+        </div>
+    </div>
+    <div class="gallery__wrapper" id="photo">
+        <div class=" gallery__title">Фотографии</div>
+        <div class="gallery">
+            <div class="gallery__item">
+                <img src="img1.jpg" alt="" class="gallery__img">
+                <div class="gallery__caption">Подстригся)</div>
+            </div>
+            <div class="gallery__item">
+                <img src="img2.jpg" alt="" class="gallery__img">
+                <div class="gallery__caption">Общаюсь с Акбаром</div>
+            </div>
+            <div class="gallery__item">
+                <img src="img3.jpg" alt="" class="gallery__img">
+                <div class="gallery__caption">Фотолуп (смешнявка)</div>
+            </div>
+            <div class="gallery__item">
+                <img src="img4.jpg" alt="" class="gallery__img">
+                <div class="gallery__caption">Бицуха лайк!</div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__title">ReiRauch Inc.</div>
+            <a href="https://www.linkedin.com/in/andrew-piskun-361b27201/" class="footer__link"><img class="footer__img"
+                    src="fot.png" alt=""></a>
+        </div>
+    </footer>
+
+
+    <script>
+        function scrollTo(element){
+            window.scroll({
+                left: 0,
+                top: element.offsetTop,
+                behavior: 'smooth'
+            })
+        }
+        var link1 = document.querySelector('#toHome')
+        var home = document.querySelector('#home')
+
+        link1.addEventListener('click', ()=> {
+            scrollTo(home)
+        })
+
+        var link2 = document.querySelector('#toAbout')
+        var about = document.querySelector('#about')
+
+        link2.addEventListener('click', ()=> {
+            scrollTo(about)
+        })
+
+        var link3 = document.querySelector('#toPhoto')
+        var photo = document.querySelector('#photo')
+
+        link3.addEventListener('click', ()=> {
+            scrollTo(photo)
+        })
+    </script>
+</body>
+
+</html>
