@@ -37,6 +37,11 @@ body {
     color: black;
     display: flex;
     align-items: center;
+    font-weight: 800;
+}
+
+.header__link:active{
+    color: red;
 }
 
 .header__logo {
@@ -76,6 +81,11 @@ body {
     width: 60%;
     border-radius: 50%;
     box-shadow: 0 0 15px black;
+    transition: 0.2s;
+}
+
+.title__img:hover{
+transform: translateY(-20px);
 }
 
 .title__name {
@@ -216,12 +226,13 @@ body {
     justify-content: center;
     align-items: center;
     width: 90%;
+    padding: 20px;
 }
 
 .footer__title {
     text-align: center;
     color: white;
-    padding: 20px;
+    padding: 10px 0 20px;
     font-size: 26px;
     font-weight: 500;
 }
